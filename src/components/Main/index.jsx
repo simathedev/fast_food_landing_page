@@ -7,6 +7,7 @@ import SizzleStacksSVG from '../../../public/SizzlingStacks1.svg';
 import description from '../../../public/description.svg';
 import { GiFireBowl } from "react-icons/gi";
 import { motion } from 'framer-motion'; // Import motion from Framer Motion
+import { Link } from 'react-scroll';
 
 export default function Index() {
   return (
@@ -25,13 +26,21 @@ export default function Index() {
           <Image src={description} alt="description SVG" className='w-[40%] xs:w-[60%] sm:w-[60%] md:w-[40%] lg:w-[45%] xl:w-[45%] my-2' />
           
           {/* Use motion.button for animated button */}
+          <Link
+      to="Food"
+      spy={true}
+      smooth={true}
+      duration={500}
+      className="cursor-pointer  hover:bg-orange-800 xs:text-[16px] sm:text-[16px] md:text-[22px] lg:text-[22px] xl:text-[22px] bg-orange-500 text-bold text-white py-3 xs:w-[40%] sm:w-[40%] md:w-[30%] lg:w-[30%] xl:w-[30%] my-7 rounded-[12px] flex items-center justify-center"
+    >
           <motion.button
             whileHover={{ scale: 1.1 }} // Scale animation on hover
             whileTap={{ scale: 0.9 }} // Scale animation on tap
-            className='gap-1 hover:bg-orange-800 xs:text-[16px] sm:text-[16px] md:text-[22px] lg:text-[22px] xl:text-[22px] bg-orange-500 text-bold text-white py-3 xs:w-[40%] sm:w-[40%] md:w-[30%] lg:w-[30%] xl:w-[30%] my-7 rounded-[12px] flex flex-row items-center justify-center'
+            className='flex flex-row gap-1 items-center justify-center'
           >
             <GiFireBowl />View Deals
           </motion.button>
+          </Link>
         </motion.div>
 
         {/* Image behind the SVGs */}

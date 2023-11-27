@@ -27,7 +27,7 @@ export default function index() {
         }
 ]
 return (
-  <div className={`${styles.navContainer} xs:w-[60%] sm:w-[60%] md:w-[50%] shadow-md min-h-84 sticky top-4`}>
+  <div className={`${styles.navContainer} xs:w-[60%] sm:w-[60%] md:w-[50%] drop-shadow-md min-h-84 sticky top-4`}>
     <div className={`p-4 gap-4 flex flex-col text-center`}>
       {menuLinks.map((link, i) => (
         <ScrollLink
