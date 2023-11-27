@@ -1,0 +1,22 @@
+.main{
+    background-color: #FAD961;
+    padding:24px 0px;
+    border:1px solid  #FAD961;
+    z-index:21;
+    position: sticky;
+    top:0;
+    right:4;
+}
+.navContainer a{
+    font-size:1.3rem;
+    margin-right:1rem;
+    text-align: right;
+    align-items: right;
+    justify-content: right;
+    font-weight:400;
+}
+.navContainer a:hover{
+    text-decoration: underline;
+    font-weight:400;
+    
+}
